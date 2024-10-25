@@ -1,5 +1,4 @@
-<h1>Cattalodge</h1>
-<h2>szoftverfejlesztő és -tesztelő vizsgaremek</h2>
+<h2>Cattalodge: szoftverfejlesztő és -tesztelő vizsgaremek</h2>
 <b>Tagok:</b>
 <ul>
  <li>
