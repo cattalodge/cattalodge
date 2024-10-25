@@ -1,0 +1,48 @@
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.button{
+    background-color: rgb(200, 200, 255);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.button:hover{
+    background-color: rgb(120, 120, 228);    
+}
+
+.reg:hover{
+    text-decoration: underline;
+}
+
+.logo{
+    width: 200px;
+
+}
+
+.title{
+    float:right;
+}
+
+nav{
+    background-color: rgb(167, 86, 86);
+    padding: 10px;
+}
+
+.yes{
+    position: absolute;
+    top: 240px;
+    border-style: solid;
+    border-radius: 30px;
+    padding: 10px;
+    width: 98%;
+}
+
+
