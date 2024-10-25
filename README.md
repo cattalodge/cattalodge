@@ -1,6 +1,6 @@
 <h1>Cattalodge</h1>
 <h2>szoftverfejlesztő és -tesztelő vizsgaremek</h2>
-**Tagok:**
+<b>Tagok:</b>
 <ul>
  <li>
   J.Viola
@@ -13,7 +13,7 @@
  </li>
 </ul>
 
-**Specifikáció**
+<b>Specifikáció</b>
 
 Ez a nyaraló hely még építés alatt van, a tervünk az, hogy egy nyaraló legyen, ahol egy szoba van kiadva egy hétre macskákkal.  
 Elsőként a főoldalra dob fel minket, ahol a nyaralóról a következő információkat lehet böngészni:  
