@@ -1,8 +1,17 @@
 # Cattalodge
 # szoftverfejlesztő és -tesztelő vizsgaremek 
-# J. Viola, B.Maja, B.Dóri munkája 
-
- 
+**Tagok:**
+<ul>
+ <li>
+  J.Viola
+ </li>
+ <li>
+  B.Maja
+ </li>
+ <li>
+  B.Dóri
+ </li>
+</ul>
 
 **Specifikáció**
 
