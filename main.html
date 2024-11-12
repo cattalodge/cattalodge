@@ -1,58 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+    <div class="page">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nyaraló</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .occupied {
+            background-color: red;
+            color: white;
+        }
+        button {
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
+    <div class="dropdown">
+        <img src="Képkivágás.PNG" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" height="67px">
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Beállítások</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Kijelentkezés</a></li>
+          </ul>
+    </div>
+
     <header>
+    
     <img src="Képkivágás.PNG" class="logo"> <h1 class="title">Cattalodge</h1>
+    <h2 class="minititle">8 millió ember kedvence</h2>
+
     
 
 </header>
-    <!--Navigation-->
 
-    <nav>
-        <a link href="login.html" class="button" style="position: absolute; left: 15px; top: 217px;">Bejelentkezés</a>
-        <a link href="register.html" class="reg" style="position: absolute; left: 107px; top: 217px;">Nincs fiókod?</a>
-        <a link href="us.html" class="button" style="position: absolute; left: 200px; top: 217px;">Rólunk</a>
-        <a link href="cats.html" class="button" style="position: absolute; left: 250px; top: 217px;">Cicáink</a>
-    </nav>
+
+
+    <!--Navigation-->
+    <ul class="nav justify-content-center" style="background-color: #E9C46A;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="login.html" style="color: #E76F51; -webkit-text-stroke: 0.5px #d16f37;">Bejelentkezés</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.html" style="color: #E76F51; -webkit-text-stroke: 0.5px #d16f37;">Nincs fiókod?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cats.html" style="color: #E76F51; -webkit-text-stroke: 0.5px #d16f37;">Cicáink</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="us.html" style="color: #E76F51; -webkit-text-stroke: 0.5px #d16f37;">Rólunk</a>
+          </li>
+      </ul>
     <!--Navigation end-->
 
+
+
     <!--Content-->
-    <div class="yes"><b>Specifikáció</b><br>
-        Ez a nyaraló hely még építés alatt van, a tervünk az, hogy egy nyaraló legyen, ahol egy szoba van kiadva egy hétre macskákkal. Elsőként a főoldalra dob fel minket, ahol a nyaralóról a következő információkat lehet böngészni:  
-        <ul>
-            <li>
-                Rólunk 
-            </li>
-            <li>
-                Macskáink  
-            </li>
-            <li>
-                A szobáról képek 
-            </li>
-            <li>
-                A szobáról egyéb információk
-            </li>
-        </ul>
-        Majd a főoldalon lehet regisztrálni/bejelentkezni,<br> 
-        A fiókról a következő adatokat kell tárolni: <br>
-        <ul>
-        <li>A fiók neve</li>
-        <li>A fiók jelszava</li> 
-        <li>A fiók profilképe (a fiók készítésnél lehet kiválasztani az adott képekből)</li>
-        <li>A fiók e-mail címe </li>
-        </ul>
+    <div class="flex-container">
+
+    <!--Week Occupation Start-->
+    <div style="width: 250px; background-color: #d16f37;">
+        <label for="week-input">Válassza ki a hetet:</label>
+        <input type="week" id="week-input" name="week-input">
+        <button id="claim-btn">Lefoglalás</button>
+        <button id="delete-btn" disabled>Lefoglalás visszavonása</button>
+    </div>
+    <!--Week Occupation End-->
+
+    <div style="width: 500px; text-align: left; padding: 10px;background-color: #F4A261;"><b>85%-os kedvezmény előszöri felhasználóknak!</b>
+        <br>Első alkalommal látogatók<br>
         
-         A regisztráció/bejelentkezés után feloldódik a foglalás lehetőség.<br>
+        Szeretnél egy olyan nyaralóban tölteni a vakációdat, ami nem túlárazott, és ráadásul cuki, játékos macskákkal van tele? 2010 óta, Cattalodge kisegített legalább 8 millió személyt, és százezreket spórolhattak meg!<br><br>
         
-        <li>A szobáról való információs mező fölött megjelenik egy “foglalj most” gomb, amire, ha rákattintasz, legörget téged a foglalás részleghez.</li> 
+        Híresek vagyunk arról, hogy milyen fajtájú kiadásaink vannak. Általánosan 1 hétre letudsz foglalni egy szállást minden bér emelés nélkül, ami segíti nyaralni vágyóink kényelmét. Ha ezt szeretnéd lefoglalni, ne késleltesd! Általában hamar kifogynak a férőhelyek.<br><br>
         
-        A foglalás részlegen van egy naptár, ahol ki lehet választani az adott hetet, amikor a felhasználó szeretné a szobánkat kivenni. Ez az adat később tárolva lesz. (A már lefoglalt heteket nem lehet kétszer kivenni). </div>
+        Ha esetleg több mint 1 hétre vágysz, lehetőségük van hosszabítani lefoglalásukat oldalunkon keresztül.<br><br>
+
+        Ez a nyaraló hely még építés alatt van, a tervünk az, hogy egy nyaraló legyen, ahol egy szoba van kiadva egy hétre macskákkal.
+    </div>
+        <div style="width: 250px; background-color: #d16f37;">
+            <p><b>Cats of the week</b></p>
+        </div>
+    </div>
+
      <!--Content end-->
+     
+
+
+
+
+<script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 </body>
+</div>
 </html>
