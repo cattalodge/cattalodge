@@ -1,11 +1,12 @@
-html, body{
+html, body {
     height: 100%;
+    margin: 0;
 }
 
 .page{
     width: 900px;
     margin: auto;
-    border-style: solid;
+    border-style: solid white;
 }
 
 header{
@@ -53,3 +54,31 @@ body{
     margin: 10px;
     text-align: center;
 }
+
+
+.flex-container2 {
+    display:flex;
+    background-color: #F4A261;
+  }
+
+
+
+.occupied {
+    background-color: red;
+    color: white;
+}
+button {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+
+.body-section-container {
+    width: 100%;
+    min-height: 30vh;
+    background-color: #d16f37;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
