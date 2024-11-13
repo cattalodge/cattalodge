@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyaraló</title>
+    <title>Cattalodge</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="dropdown">
         <img src="Képkivágás.PNG" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" height="67px">
-        <ul class="dropdown-menu dropdown-menu-dark">
+        <ul class="dropdown-menu dropdown-menu-light">
             <li><a class="dropdown-item" href="#">Beállítások</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Kijelentkezés</a></li>
@@ -32,13 +32,16 @@
     <!--Navigation-->
     <ul class="nav justify-content-center" style="background-color: #E9C46A;">
         <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="main.html" style="color: #E76F51; -webkit-text-stroke: 0.5px #d16f37;">Főoldal</a>
+          </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="login.html" style="color: #E76F51; -webkit-text-stroke: 0.5px #d16f37;">Bejelentkezés</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="register.html" style="color: #E76F51; -webkit-text-stroke: 0.5px #d16f37;">Nincs fiókod?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="cats.html" style="color: #E76F51; -webkit-text-stroke: 0.5px #d16f37;">Cicáink</a>
+          <a class="nav-link disabled" href="cats.html" style="color: #ad533c; -webkit-text-stroke: 0.5px #d16f37;">Cicáink</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="us.html" style="color: #E76F51; -webkit-text-stroke: 0.5px #d16f37;">Rólunk</a>
@@ -56,57 +59,36 @@
 
     <div style="width: 200px; text-align: left; padding: 10px;background-color: #F4A261;">
 
-        <!--Popover Allergy Start-->
-        <img src="allergy.png" id="popoverImage" style="position:absolute" height="25px" width="25px">
-        <div id="popover"><p style="line-height: 10px;">Hipoallergén vagyok! :3</p></div>
-    
-        <script>
-            const image = document.getElementById('popoverImage');
-            const popover = document.getElementById('popover');
-    
-            image.addEventListener('click', function(event) {
-                const rect = image.getBoundingClientRect();
-                popover.style.display = 'block';
-                popover.style.left = rect.right + 'px';
-                popover.style.top = rect.top + 'px';
-            });
-    
-            document.addEventListener('click', function(event) {
-                if (!image.contains(event.target) && !popover.contains(event.target)) {
-                    popover.style.display = 'none';
-                }
-            });
-        </script>
-        <!--Popover Allergy End-->
 
-        <img src="cat1.jpg" height="200px" width="200px">
+
+        <img src="cat1.jpg" height="200px" width="200px"  id="borderdesc">
         <div class="catdesc">
-            <img src="male.png" height="25px" width="25px" style="position: absolute;"><b>Mikróhullámos sütő</b>
-            <p style="font-size: 13px; overflow-y: scroll;">Ismerkedj meg Mikróval! Ő egy szelíd, idegenekkel jól kijövő kölyök cica, aki szereti azt, ha sokat simogatják és ha beleülhet az öledbe. Mint egy kis angyal, hosszas ideig elszórakoztatja a vendégeinket.</p>
+            <img src="male.png" height="25px" width="25px" style="position: absolute;"><b style="color: orangered;">Mikróhullámos sütő</b>
+            <p style="font-size: 13px; overflow-y: scroll; scrollbar-width: none;">Ismerkedj meg Mikróval! Ő egy szelíd, idegenekkel jól kijövő kölyök cica, aki szereti azt, ha sokat simogatják és ha beleülhet az öledbe. Mint egy kis angyal, hosszas ideig elszórakoztatja a vendégeinket.</p>
         </div>
     </div>
 
     <div style="width: 200px; text-align: left; padding: 10px;background-color: #F4A261;">
-        <img src="cat2.jpg" height="200px" width="200px">
+        <img src="cat2.jpg" height="200px" width="200px" id="borderdesc">
         <div class="catdesc">
             <img src="male.png" height="25px" width="25px" style="position: absolute;"><b>Vajas Herceg</b>
-            <p style="font-size: 13px; overflow-y: scroll;">Ismerkedj meg Hercegünkkel! Ahogy a név sugallja, egy nagyon kifinomult felnőtt cicáról van szó. Eleven és elegáns, sok ember szívét nyerte el a heti szavazás során.</p>
+            <p style="font-size: 13px; overflow-y: scroll;  scrollbar-width: none;">Ismerkedj meg Hercegünkkel! Ahogy a név sugallja, egy nagyon kifinomult felnőtt cicáról van szó. Eleven és elegáns, sok ember szívét nyerte el a heti szavazás során.</p>
         </div>
     </div>
 
     <div style="width: 200px; text-align: left; padding: 10px;background-color: #F4A261;">
-        <img src="cat3.png" height="200px" width="200px">
+        <img src="cat3.png" height="200px" width="200px" id="borderdesc">
         <div class="catdesc">
             <img src="female.png" height="25px" width="25px" style="position: absolute;"><b>Cirmos</b>
-            <p style="font-size: 13px; overflow-y: scroll;">Ismerkedj meg Cirmivel! Egy hiperaktív, barátságos cica. Nagyon szeret más cicákkal szocializálódni, és ugyan olyan szeretettel fordul vendégeink felé is. Sok vendégnek alig volt szíve egyedül hagyni.</p>
+            <p style="font-size: 13px; overflow-y: scroll;  scrollbar-width: none;">Ismerkedj meg Cirmivel! Egy hiperaktív, barátságos cica. Nagyon szeret más cicákkal szocializálódni, és ugyan olyan szeretettel fordul vendégeink felé is. Sok vendégnek alig volt szíve egyedül hagyni.</p>
         </div>
     </div>
 
     <div style="width: 200px; text-align: left; padding: 10px;background-color: #F4A261;">
-        <img src="cat4.jpg" height="200px" width="200px">
+        <img src="cat4.jpg" height="200px" width="200px" id="borderdesc">
         <div class="catdesc">
             <img src="male.png" height="25px" width="25px" style="position: absolute;"><b>Fufru</b>
-            <p style="font-size: 13px; overflow-y: scroll;">TBA</p>
+            <p style="font-size: 13px; overflow-y: scroll;  scrollbar-width: none;">TBA</p>
         </div>
     </div>
 </div>
@@ -116,34 +98,34 @@
 <div class="flex-container">
 
     <div style="width: 200px; text-align: left; padding: 10px;background-color: #F4A261;">
-        <img src="cat5.jpg" height="200px" width="200px">
+        <img src="cat5.jpg" height="200px" width="200px" id="borderdesc">
         <div class="catdesc">
             <img src="female.png" height="25px" width="25px" style="position: absolute;"><b>Valentin</b>
-            <p style="font-size: 13px; overflow-y: scroll;height: 50vh;">TBA</p>
+            <p style="font-size: 13px; overflow-y: scroll;  scrollbar-width: none; height: 50vh;">TBA</p>
         </div>
     </div>
 
     <div style="width: 200px; text-align: left; padding: 10px;background-color: #F4A261;">
-        <img src="cat6.jpeg" height="200px" width="200px">
+        <img src="cat6.jpeg" height="200px" width="200px" id="borderdesc">
         <div class="catdesc">
             <img src="female.png" height="25px" width="25px" style="position: absolute;"><b>Narancshéj</b>
-            <p style="font-size: 13px; overflow-y: scroll;">TBA</p>
+            <p style="font-size: 13px; overflow-y: scroll;  scrollbar-width: none;">TBA</p>
         </div>
     </div>
 
     <div style="width: 200px; text-align: left; padding: 10px;background-color: #F4A261;">
-        <img src="cat7.jpg" height="200px" width="200px">
+        <img src="cat7.jpg" height="200px" width="200px" id="borderdesc">
         <div class="catdesc">
             <img src="male.png" height="25px" width="25px" style="position: absolute;"><b>Megatorn</b>
-            <p style="font-size: 13px; overflow-y: scroll;">TBA</p>
+            <p style="font-size: 13px; overflow-y: scroll;  scrollbar-width: none;">TBA</p>
         </div>
     </div>
 
     <div style="width: 200px; text-align: left; padding: 10px;background-color: #F4A261;">
-        <img src="cat8.PNG" height="200px" width="200px">
+        <img src="cat8.PNG" height="200px" width="200px" id="borderdesc">
         <div class="catdesc">
             <img src="female.png" height="25px" width="25px" style="position: absolute;"><b>Keksz</b>
-            <p style="font-size: 13px; overflow-y: scroll;">PLACEHOLDER</p>
+            <p style="font-size: 13px; overflow-y: scroll;  scrollbar-width: none;">PLACEHOLDER</p>
         </div>
     </div>
 </div>
@@ -153,34 +135,34 @@
 <div class="flex-container">
 
     <div style="width: 200px; text-align: left; padding: 10px;background-color: #F4A261;">
-        <img src="cat9.PNG" height="200px" width="200px">
+        <img src="cat9.PNG" height="200px" width="200px" id="borderdesc">
         <div class="catdesc">
             <img src="male.png" height="25px" width="25px" style="position: absolute;"><b>Világpusztító</b>
-            <p style="font-size: 13px; overflow-y: scroll;">TBA</p>
+            <p style="font-size: 13px; overflow-y: scroll;  scrollbar-width: none;">TBA</p>
         </div>
     </div>
 
     <div style="width: 200px; text-align: left; padding: 10px;background-color: #F4A261;">
-        <img src="cat10.PNG" height="200px" width="200px">
+        <img src="cat10.PNG" height="200px" width="200px" id="borderdesc">
         <div class="catdesc">
             <img src="female.png" height="25px" width="25px" style="position: absolute;"><b>Fishron</b>
-            <p style="font-size: 13px; overflow-y: scroll;">TBA</p>
+            <p style="font-size: 13px; overflow-y: scroll;  scrollbar-width: none;">TBA</p>
         </div>
     </div>
 
     <div style="width: 200px; text-align: left; padding: 10px;background-color: #F4A261;">
-        <img src="cat11.jpeg" height="200px" width="200px">
+        <img src="cat11.jpeg" height="200px" width="200px" id="borderdesc">
         <div class="catdesc">
             <img src="male.png" height="25px" width="25px" style="position: absolute;"><b>Demogorgon</b>
-            <p style="font-size: 13px; overflow-y: scroll;">TBA</p>
+            <p style="font-size: 13px; overflow-y: scroll;  scrollbar-width: none;">TBA</p>
         </div>
     </div>
 
     <div style="width: 200px; text-align: left; padding: 10px;background-color: #F4A261;">
-        <img src="cat12.jpeg" height="200px" width="200px">
+        <img src="cat12.jpeg" height="200px" width="200px" id="borderdesc">
         <div class="catdesc">
             <img src="female.png" height="25px" width="25px" style="position: absolute;"><b>Cryogen</b>
-            <p style="font-size: 13px; overflow-y: scroll;">TBA</p>
+            <p style="font-size: 13px; overflow-y: scroll;  scrollbar-width: none;">TBA</p>
         </div>
 </div>
 <script src="script.js"></script>
