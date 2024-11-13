@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-color: #fff0d8;
 }
 
 .page{
@@ -85,9 +86,22 @@ button {
 
 
 .catweek {
-    width: 100%;
+    width: 95.2%;
     height: 5%;
+    margin-left: 5px;
     max-height: 13vh;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.catdesc {
+    width: 111.5%;
+    height: 50%;
+    max-height: 10vh;
     background-color: #ffffff;
     text-align: center;
     display: flex;
@@ -101,3 +115,25 @@ button {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
+
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .catweekcon {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .catdesc {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+
+
+    #borderdesc{
+        border: solid white 3px;
+}
+
+
+
