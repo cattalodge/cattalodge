@@ -1,0 +1,7 @@
+CREATE TABLE vendegek (
+	azon INT(2) AUTO_INCREMENT PRIMARY KEY,
+	nev VARCHAR(30) NOT NULL,
+	email VARCHAR(25) UNIQUE NOT NULL,
+	telefon VARCHAR(15),
+	cim VARCHAR(50)
+	) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE utf8mb4_hungarian_ci;
