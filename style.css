@@ -2,7 +2,13 @@ html, body {
     height: 100%;
     margin: 0;
     background-color: #fff0d8;
+    background-repeat: no-repeat;
+    background-image:url('pictures/test.jpg');
+    background-color: #E9C46A;
+    background-blend-mode: multiply;
+    height: 100vh;
 }
+
 
 .page{
     width: 900px;
@@ -10,19 +16,23 @@ html, body {
     border-style: solid white;
 }
 
+
 header{
-    background-color: #36BA98;
+    background: linear-gradient(120deg, #36BA98, #F4A261);
 }
+
 
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     -webkit-text-size-adjust: none;
 }
 
+
 .logo{
     width: 200px;
 
 }
+
 
 .title{
     position: absolute;
@@ -31,6 +41,7 @@ body{
     font-size: 50px;
 }
 
+
 .minititle{
     position: absolute;
     margin-left: 333px;
@@ -38,16 +49,19 @@ body{
     font-size: 20px;
 }
 
+
 .dropdown {
     float: right;
     display: inline-block;
 }
 
+
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
     background-color: #F4A261;
-  }
+}
+
 
   .flex-container > div {
     background-color: #f1f1f1;
@@ -61,14 +75,15 @@ body{
     display:flex;
     background-color: #F4A261;
     padding-left: 730px;
-  }
-
+}
 
 
 .occupied {
     background-color: red;
     color: white;
 }
+
+
 button {
     margin-top: 10px;
     margin-right: 5px;
@@ -109,6 +124,7 @@ button {
     
 }
 
+
 .catweekcon{
     height: 20%;
     max-height: 50vh;
@@ -117,23 +133,19 @@ button {
 }
 
 
-  
   /* Hide scrollbar for IE, Edge and Firefox */
   .catweekcon {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
-    /* Hide scrollbar for IE, Edge and Firefox */
+
     .catdesc {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
       }
 
 
-    #borderdesc{
+    .borderdesc{
         border: solid white 3px;
 }
-
-
-
