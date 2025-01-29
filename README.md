@@ -2,13 +2,13 @@
 <b>Tagok:</b>
 <ul>
  <li>
-  J.Viola
- </li>
- <li>
-  B.Maja
+  B.Maya
  </li>
  <li>
   B.Dóri
+ </li>
+ <li>
+  J.Viola
  </li>
 </ul>
 
