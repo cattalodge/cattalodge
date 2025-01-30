@@ -2,10 +2,10 @@
 <b><img src="https://pixels.crd.co/assets/images/gallery40/313d59c5.gif?v=dd736185">Tagok:</b>
 <ul>
  <li>
-  B.Maya
+  B.Dóri
  </li>
  <li>
-  B.Dóri
+  B.Maya
  </li>
  <li>
   J.Viola
