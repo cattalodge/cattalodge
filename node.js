@@ -1,6 +1,6 @@
 // app.js
 const express = require('express');
-const mongoose = require('mongoose');
+const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 
 // Express alkalmazás létrehozása
@@ -9,18 +9,24 @@ const app = express();
 // Middleware-ek beállítása
 app.use(bodyParser.json()); // Kérés testének JSON formátumban történő kezelése
 
-// MongoDB adatbázishoz való csatlakozás
-mongoose.connect('https://github.com/cattalodge/cattalodges', { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('Sikeresen csatlakoztunk a MongoDB adatbázishoz!'))
-  .catch((err) => console.error('Hiba történt a MongoDB csatlakozásakor:', err));
 
-// Mongoose séma és modell létrehozása
-const UserSchema = new mongoose.Schema({
-  name: String,
-  email: String
+
+const connection = mysql.createConnection({
+  host: 'localhost', // Az adatbázis hosztja (például localhost)
+  user: 'root',      // Az adatbázis felhasználója
+  password: '', // Az adatbázis jelszava
+  database: 'cattalodge' // Az adatbázis neve
 });
 
-const User = mongoose.model('User', UserSchema);
+connection.connect(err => {
+  if (err) {
+    console.error('Hiba a kapcsolódás során:', err.stack);
+    return;
+  }
+  console.log('Sikeres kapcsolódás, ID:', connection.threadId);
+});
+
+module.exports = connection;
 
 // Az alapértelmezett oldal
 app.get('/', (req, res) => {
@@ -69,4 +75,4 @@ app.listen(PORT, () => {
   console.log(`Szerver fut a ${PORT} porton`);
 });
 
-mongoose.connect('https://github.com/cattalodge/cattalodge', { useNewUrlParser: true, useUnifiedTopology: true })
+
