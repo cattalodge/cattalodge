@@ -23,8 +23,6 @@ A szobáról egyéb információk<br>
 Majd a főoldalon lehet regisztrálni/bejelentkezni, 
 A fiókról a következő adatokat kell tárolni:<br>
 A fiók neve<br>
-A fiók jelszava<br> 
-A fiók profilképe (a fiók készítésnél lehet kiválasztani az adott képekből)<br>
 A fiók e-mail címe 
 
  
