@@ -12,6 +12,8 @@
  </li>
 </ul>
 
+<p>A fájlok amik nem a .zip mappában találhatóak azért lettek megtartva, hogy lehessen látni a haladást. Egyes fájlok elavultak.</p>
+
 <b>Specifikáció</b> <img src="https://graphic.neocities.org/tumblr_inline_otb6gpi3cv1rgjs1f_500.gif">
 
 Ez a nyaraló hely még építés alatt van, a tervünk az, hogy egy nyaraló legyen, ahol egy szoba van kiadva egy hétre macskákkal.  
