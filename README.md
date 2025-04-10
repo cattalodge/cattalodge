@@ -12,7 +12,7 @@
  </li>
 </ul>
 
-<p>A fájlok amik nem a .zip mappában találhatóak azért lettek megtartva, hogy lehessen látni a haladást. Egyes fájlok elavultak.</p>
+<p>A fájlok amik nem a cattalodge-main.zip mappában találhatóak azért lettek megtartva, hogy lehessen látni a haladást. Egyes fájlok elavultak.</p>
 
 <b>Specifikáció</b> <img src="https://graphic.neocities.org/tumblr_inline_otb6gpi3cv1rgjs1f_500.gif">
 
