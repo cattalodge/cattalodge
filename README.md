@@ -12,24 +12,27 @@
  </li>
 </ul>
 
-<p>A fájlok amik nem a cattalodge-main.zip mappában találhatóak azért lettek megtartva, hogy lehessen látni a haladást. Egyes fájlok elavultak.</p>
+<p>A fájlok amik nem a cattalodge-main.zip mappában találhatóak azért lettek megtartva, hogy lehessen látni a haladást. MINDEN FÁJL ELAVULT. A VÉGLEGES.ZIP-ET TÖLTSÉK LE.</p>
 
 <b>Specifikáció</b> <img src="https://graphic.neocities.org/tumblr_inline_otb6gpi3cv1rgjs1f_500.gif">
 
-Ez a nyaraló hely még építés alatt van, a tervünk az, hogy egy nyaraló legyen, ahol egy szoba van kiadva egy hétre macskákkal.  
 Elsőként a főoldalra dob fel minket, ahol a nyaralóról a következő információkat lehet böngészni:<br>
 Rólunk<br>
-Macskáink<br>
-A szobáról képek<br>
-A szobáról egyéb információk<br>
+Macskáink, a hét macskája<br>
+A szobáról képek, és információk<br>
+Értékelések<br>
+Kiemelt szolgáltatások<br>
+Admin panel, ami csak adminként elérhető<br>
+
 Majd a főoldalon lehet regisztrálni/bejelentkezni, 
 A fiókról a következő adatokat kell tárolni:<br>
 A fiók neve<br>
-A fiók e-mail címe 
+A fiók e-mail címe<br>
+A fiók jelszava(Ami titkosítva van)
 
  
 
-A regisztráció/bejelentkezés után feloldódik a foglalás lehetőség. 
-A szobáról való információs mező fölött megjelenik egy “foglalj most” gomb, amire, ha rákattintasz, legörget téged a foglalás részleghez. 
-A foglalás részlegen van egy naptár, ahol ki lehet választani az adott hetet, amikor a felhasználó szeretné a szobánkat kivenni. Ez az adat később tárolva lesz. (A már lefoglalt heteket nem lehet kétszer kivenni). 
+A regisztráció/bejelentkezés után feloldódik a foglalás lehetőség. A szobáról való információs mező mellett a “foglalj most” gomb használhatóvá válik, amire, ha rákattintasz, feldob egy panelt, ahol 1-52-ig választanod kell a hetek közül. Ez az adat egyből tárolásra kerül, és kétszer nem lehet kivenni ugyan azt a hetet egyik fiókkal sem.
+Az admin panel kifejezetten az admin@gmail.com fiókkal elérhető, aminek a jelenlegi jelszava „admin”. Ennek a fióknak a használatával lesz elérhető a macskáknak az adatbázisa, ahol tudunk törölni/hozzáadni macskákat. Minden más fiók kap egy figyelmeztetést, hogy nincsen jogosultságuk megnézni az admin panelt.
+
 
